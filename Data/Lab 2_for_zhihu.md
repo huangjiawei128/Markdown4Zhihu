@@ -2,7 +2,7 @@
 
 ## Raft struct
 
-<img src="https://raw.githubusercontent.com/huangjiawei128/Markdown4Zhihu/master/Data/Lab 2/Untitled.png" alt="Untitled" style="zoom:50%;" />
+<img src="https://https://github.com/huangjiawei128/Markdown4Zhihu/blob/master/OriData/6.824Lab2/Untitled.png" alt="Untitled" style="zoom:50%;" />
 
 <img src="Untitled%201.png" alt="Untitled" style="zoom:50%;" />
 
