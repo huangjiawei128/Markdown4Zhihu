@@ -2,11 +2,11 @@
 
 ## Raft struct
 
-<img src="Lab%202%20ee21607a2c334d849ef1ac7d849e9737/Untitled.png" alt="Untitled" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/huangjiawei128/Markdown4Zhihu/master/Data/Lab 2/Untitled.png" alt="Untitled" style="zoom:50%;" />
 
-<img src="Lab%202%20ee21607a2c334d849ef1ac7d849e9737/Untitled%201.png" alt="Untitled" style="zoom:50%;" />
+<img src="Untitled%201.png" alt="Untitled" style="zoom:50%;" />
 
-<img src="Lab%202%20ee21607a2c334d849ef1ac7d849e9737/Untitled%202.png" alt="Untitled" style="zoom:50%;" />
+<img src="Untitled%202.png" alt="Untitled" style="zoom:50%;" />
 
 - 基本成员变量
     - mu sync.Mutex：互斥锁
@@ -85,7 +85,7 @@
 
 ## 3个角色转变
 
-<img src="Lab%202%20ee21607a2c334d849ef1ac7d849e9737/Untitled%203.png" alt="Untitled" style="zoom:50%;" />
+<img src="Untitled%203.png" alt="Untitled" style="zoom:50%;" />
 
 - 各个角色转变方法本身均不开启新的计时周期
 - 若更新到所有服务器持久化状态成员变量，需进行**状态变量持久化**
@@ -173,7 +173,7 @@
 
 ### RequestVote RPC
 
-<img src="Lab%202%20ee21607a2c334d849ef1ac7d849e9737/Untitled%204.png" alt="Untitled" style="zoom:50%;" />
+<img src="Untitled%204.png" alt="Untitled" style="zoom:50%;" />
 
 - 输入参数：RequestVoteArgs struct
     - RpcId int：RPC id
@@ -209,7 +209,7 @@
 
 ### AppendEntries RPC
 
-<img src="Lab%202%20ee21607a2c334d849ef1ac7d849e9737/Untitled%205.png" alt="Untitled" style="zoom:50%;" />
+<img src="Untitled%205.png" alt="Untitled" style="zoom:50%;" />
 
 - 输入参数：AppendEntriesArgs struct
     - RpcId int：RPC id
@@ -263,11 +263,11 @@
     1. 令rf.matchIndex[server] = reply.NextIndex-1, rf.nextIndex[server] = reply.NextIndex
     2. 根据rf.matchIndex计算大部分其他服务器均匹配的日志条目索引及对应的term，若该索引值大于rf.commitIndex且对应的term等于rf.currentTerm，将rf.commitIndex更新为该索引值（注意Figure 8的场景）
        
-        <img src="Lab%202%20ee21607a2c334d849ef1ac7d849e9737/Untitled%206.png" alt="Untitled" style="zoom:50%;" />
+        <img src="Untitled%206.png" alt="Untitled" style="zoom:50%;" />
 
 ### InstallSnapshot RPC
 
-<img src="Lab%202%20ee21607a2c334d849ef1ac7d849e9737/Untitled%207.png" alt="Untitled" style="zoom:50%;" />
+<img src="Untitled%207.png" alt="Untitled" style="zoom:50%;" />
 
 - 输入参数：InstallSnapshotArgs struct
     - RpcId int：RPC id
